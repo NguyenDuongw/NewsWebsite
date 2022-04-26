@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- boottrah5 install -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- jQuerry insrall -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- tittle -->
+        <header class="row justify-content-center">
+            <h1 class="col-6">My News</h1>
+            <a class="col-6" id="search"><img id="searchIcon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"></a>
+        </header>
+
+        <!-- loading gif -->
+        <div id="loading">
+            <img id="loading-image" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif"
+                alt="Loading..." />
+        </div>
+
+        <!-- pop-up window -->
+        <div class="searchWindow container">
+            <div class="row justify-content-center">
+                <div class="col-12 popCon row">
+                    <label class="col-3" for="search">Keyword: </label>
+                    <input class="col-8" type="text" id="searchIn" placeholder="Enter Keyword" name="search">
+                </div>
+                <div class="col-12 popCon row">
+                    <label class="col-3" for="time">From: </label>
+                    <input class="col-8" type="text" id="timeIn" placeholder="Start from" name="time">
+                </div>
+                <button class="btn-primary searchBtn" type="submit">Submit</button>
+                <img id="cancelIcon" src="https://cdn-icons-png.flaticon.com/512/66/66847.png" alt="cancel-icon">
+            </div>
+        </div>
+
+        <!-- news content -->
+        <a target="_blank" class="row content" id="url_0">
+            <img id="img_0" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_0"></h4>
+                <em id="time_0"></em>
+                <h5 id="descrip_0"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_1">
+            <img id="img_1" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_1"></h4>
+                <em id="time_1"></em>
+                <h5 id="descrip_1"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_2">
+            <img id="img_2" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_2"></h4>
+                <em id="time_2"></em>
+                <h5 id="descrip_2"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_3">
+            <img id="img_3" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_3"></h4>
+                <em id="time_3"></em>
+                <h5 id="descrip_3"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_4">
+            <img id="img_4" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_4"></h4>
+                <em id="time_4"></em>
+                <h5 id="descrip_4"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_5">
+            <img id="img_5" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_5"></h4>
+                <em id="time_5"></em>
+                <h5 id="descrip_5"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_6">
+            <img id="img_6" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_6"></h4>
+                <em id="time_6"></em>
+                <h5 id="descrip_6"></h5>
+            </div>
+        </a>
+        <a target="_blank" class="row content" id="url_7">
+            <img id="img_7" class="col-12 col-lg-4 imgContent">
+            <div class="col-12 col-lg-8">
+                <h4 id="tittle_7"></h4>
+                <em id="time_7"></em>
+                <h5 id="descrip_7"></h5>
+            </div>
+        </a>
+
+        <footer class="row">
+            <div class="card-body text-center mb-3">
+                <p>Trang web này lập ra nhằm mục đích hoàn thành Assignment 4,<br> hoàn toàn không mang mục đích thương
+                    mại<br>Mọi ý kiến đóng góp xin liên hệ theo các đường dẫn sau</p>
+                <a target="_blank" href="#"><i class="bi bi-twitter mx-3"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-facebook mx-3"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-linkedin mx-3"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-instagram  mx-3"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- màn đen -->
+    <div class="visor container-fluid"></div>
+    <script src="java.js"></script>
+</body>
+
+</html>
